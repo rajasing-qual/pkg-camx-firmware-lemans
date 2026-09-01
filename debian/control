@@ -1,0 +1,27 @@
+Source: camx-firmware-lemans
+Section: non-free-firmware/libs
+Maintainer: Qualcomm Camera Team <camx.deb.maintainers@qti.qualcomm.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: http://support.cdmatech.com
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-camx-firmware-lemans
+Vcs-Git: https://github.com/qualcomm-linux/pkg-camx-firmware-lemans.git
+
+Package: camx-firmware-lemans
+Architecture: arm64
+Depends:
+ ${misc:Depends},
+Description: Qualcomm CamX camera stack firmware
+ This package contains the camera firmware file for the Qualcomm Lemans
+ platform.
+
+Package: camx-firmware-monaco
+Section: libdevel
+Architecture: arm64
+Depends:
+ camx-firmware-lemans (= ${binary:Version}),
+ ${misc:Depends}
+Description: Qualcomm CamX camera stack firmware package.
+ camera firmware file for lemans platform.

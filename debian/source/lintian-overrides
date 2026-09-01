@@ -1,0 +1,3 @@
+# Prebuilt firmware
+source-is-missing [*/arm64/usr/lib/firmware/qcom/*]
+source-contains-prebuilt-binary [*/arm64/usr/lib/firmware/qcom/*]
